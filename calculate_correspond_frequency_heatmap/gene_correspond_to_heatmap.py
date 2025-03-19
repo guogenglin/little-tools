@@ -47,4 +47,4 @@ sns.heatmap(similarity, mask = mask_upper, annot = True, fmt = ".2f",
             cmap = white_cmap, linewidths = 0.5, linecolor = 'gray', cbar = False)
 
 #plt.show()
-plt.savefig('Average_Nucleotide_Identity.png', dpi = 600)
+plt.savefig('relationship.png', dpi = 600)
