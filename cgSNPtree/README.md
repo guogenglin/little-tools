@@ -1,1 +1,5 @@
 cgSNPtree is a pipeline wrote by Bash to build cgSNP tree based on assembled genome sequences using snippy - gubbins - fasttree, the only thing you need to do is define the reference sequence and output dir, or if you want to do this use different data such as fastq, or you want to build the phylogenetic tree using other tools such as raxml, iq-tree, you may need to revise the script.
+You can run this pipeline by typing 
+``` shell
+bash cgsnptree.sh
+```
