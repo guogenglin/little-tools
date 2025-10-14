@@ -5,7 +5,7 @@
 # ============================================
 
 #  ------------------------------------------------------
-REF=THO-011.fasta          # reference genome
+REF=reference.fasta          # reference genome
 OUTDIR=snippy   # output dir
 # -------------------------------------------------------
 
