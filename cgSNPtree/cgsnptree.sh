@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================
-# Pipeline: Snippy → Snippy-core → Gubbins → IQ-TREE2
+# Pipeline: Snippy → Snippy-core → Gubbins → FastTree
 # Author: Genglin Guo
 # ============================================
 
