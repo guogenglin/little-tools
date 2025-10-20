@@ -24,23 +24,21 @@ header = 'DATASET_COLORSTRIP\nSEPARATOR SPACE\nDATASET_LABEL label1\nCOLOR #ff00
 label.write(header)
 
 # 
-risst = open('C:/Users/86182/Desktop/k5.txt', 'rt')
+detail = open('C:/Users/86182/Desktop/k5.txt', 'rt').readlines()
 total_group = 0
 color_comparison = dict()
-for line in risst:
-    line = line.strip().split('	')
-    if line[0] == 'Isolate':
-        continue
-    else:
-        serotype = line[1]
-        if serotype.endswith('?'):
-            serovar = line[1][:-1]
-        if line[1] not in color_comparison:
-            color = color_generator()
-            color_comparison[line[1]] = color
-            total_group += 1
-        label.write(line[0])
-        label.write('\t')
-        label.write(color_comparison[line[1]])
-        label.write('\n')
+for line in detail[1:]:
+    line = line.strip().split('\t')
+    serotype = line[1]
+    if serotype.endswith('?'):
+        serotype = serotype[:-1]
+    if serotype not in color_comparison:
+        color = color_generator()
+        color_comparison[serotype] = color
+        total_group += 1
+    label.write(line[0])
+    label.write('\t')
+    label.write(color_comparison[serotype])
+    label.write('\n')
 label.close()
+
