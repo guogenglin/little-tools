@@ -1,0 +1,1 @@
+This script automatically generates a circular genome map using PyCircos. It requires three input files: a genome in FASTA format, a genome annotation in GFF3 format, and the annotation results from EggNOG-mapper. Simply modify the file paths and the output path in the script, then run it. Within seconds, you’ll have a beautifully rendered genome map.
