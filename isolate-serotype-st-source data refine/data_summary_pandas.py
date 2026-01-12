@@ -3,7 +3,7 @@
 Created on Wed Feb 19 11:11:36 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 import pandas as pd
@@ -26,3 +26,4 @@ st_count.to_csv('C:/Users/86182/Desktop/st.txt', sep = '\t', index = True)
 sero_st.to_csv('C:/Users/86182/Desktop/sero_st.txt', sep = '\t', index = True)
 sero_host.to_csv('C:/Users/86182/Desktop/sero_host.txt', sep = '\t', index = True)
 filtered_sero_host_freq.to_csv('C:/Users/86182/Desktop/sero_host_freq.txt', sep = '\t', index = True)
+
