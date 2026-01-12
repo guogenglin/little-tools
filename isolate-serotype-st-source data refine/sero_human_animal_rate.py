@@ -3,7 +3,7 @@
 Created on Fri Jan 10 14:07:00 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 # open the input file
@@ -30,5 +30,6 @@ for line in sero_human_animal_file:
         sero_human_animal_rate.write('\n')
 # close the output files
 sero_human_animal_rate.close()
+
 
 
