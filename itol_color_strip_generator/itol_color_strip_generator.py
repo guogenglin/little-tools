@@ -3,7 +3,7 @@
 Created on Tue Dec 12 15:13:22 2023
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 import random
@@ -41,4 +41,5 @@ for line in detail[1:]:
     label.write(color_comparison[serotype])
     label.write('\n')
 label.close()
+
 
