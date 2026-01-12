@@ -3,7 +3,7 @@
 Created on Tue Mar 18 10:23:43 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 import sys
@@ -48,3 +48,4 @@ sns.heatmap(similarity, mask = mask_upper, annot = True, fmt = ".2f",
 
 #plt.show()
 plt.savefig('relationship.png', dpi = 600)
+
