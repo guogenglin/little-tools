@@ -3,7 +3,7 @@
 Created on Tue Oct 21 16:09:56 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 import pycircos
@@ -195,4 +195,5 @@ plt.text(0, 0, f'{arc_id}\n{seq_len} bp', fontsize=12, ha='center', va='center',
 
 circle.figure
 circle.figure.savefig('C:/Users/gengl/Desktop/circle.svg')
+
 
