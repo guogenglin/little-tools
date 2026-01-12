@@ -3,7 +3,7 @@
 Created on Tue Apr 29 15:18:16 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 import numpy as np
@@ -107,4 +107,5 @@ ax1.legend(
 
 plt.savefig('C:/Users/86182/Desktop/test.png', dpi = 600)
 # Show graphic
+
 plt.show()
