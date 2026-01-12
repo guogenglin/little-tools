@@ -3,7 +3,7 @@
 Created on Fri Jan 10 13:34:10 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 # open the input file
@@ -75,3 +75,4 @@ sero_count_file.close()
 sero_st_file.close()
 st_count_file.close()
 sero_human_animal_file.close()
+
