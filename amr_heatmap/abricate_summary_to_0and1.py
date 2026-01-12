@@ -2,7 +2,8 @@
 """
 Created on Tue Jan 21 09:50:18 2025
 
-@author: 86182
+@author: Genglin Guo
+@e-mail: 2019207025@njau.edu.cn
 """
 
 amr_summary = open('C:/Users/86182/Desktop/amrsummary.tab', 'rt').readlines()
@@ -22,3 +23,4 @@ for line in amr_summary[1:]:
         amr_file.write('\t')
     amr_file.write('\n')
 amr_file.close()
+
