@@ -3,7 +3,7 @@
 Created on Wed Oct  8 13:45:59 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 from itertools import combinations
@@ -108,4 +108,5 @@ for key, value in all_combos.items():
     edge_sheet.write(str(value))
     edge_sheet.write(',')
     edge_sheet.write('\n')
+
 edge_sheet.close()
