@@ -3,7 +3,7 @@
 Created on Tue Jan 14 12:05:51 2025
 
 @author: Genglin Guo
-@e-mail: 2019207025.njau.edu.cn
+@e-mail: 2019207025@njau.edu.cn
 """
 
 #open serotype file (two column, isolate : serotype) and amr file (isolate, amr_information)
@@ -71,3 +71,4 @@ for serotype, amr_profile in serotype_amr.items():
         output_rate.write('\n')
 output_number.close()
 output_rate.close()
+
