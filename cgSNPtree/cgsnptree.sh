@@ -35,3 +35,6 @@ echo "  - Recombination-filtered SNPs: $OUTDIR/clean.core.aln"
 echo "  - Gubbins ML tree: $OUTDIR/gubbins.final_tree.tre"
 echo "  - FastTree tree: $OUTDIR/clean.core.tree"
 echo "You can now visualize '$OUTDIR/clean.core.tree' in iTOL."
+
+# a seqkit tool could be used to count the total number of final non-recombinant cgSNPs: seqkit stat 'Filtered Polymorphic Sites.fasta'
+# or you can use grep -v '^>' 'Filtered Polymorphic Sites.fasta' | tr -d '\n' | wc -c, and divide the number of the input sequences
