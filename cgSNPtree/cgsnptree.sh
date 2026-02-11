@@ -38,3 +38,7 @@ echo "You can now visualize '$OUTDIR/clean.core.tree' in iTOL."
 
 # a seqkit tool could be used to count the total number of final non-recombinant cgSNPs: seqkit stat 'Filtered Polymorphic Sites.fasta'
 # or you can use grep -v '^>' 'Filtered Polymorphic Sites.fasta' | tr -d '\n' | wc -c, and divide the number of the input sequences
+
+# also, you may want to replace fasttree by raxml:
+# raxml-ng --all --msa clean.core.aln --model GTR+G+ASC_LEWIS --bs-trees 1000 --threads 8 --prefix clean.core.raxml
+# you may need to modify the bootstrap number as you need and the threads number to fit your computer.
