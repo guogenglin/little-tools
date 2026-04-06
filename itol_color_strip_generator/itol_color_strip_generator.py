@@ -39,6 +39,8 @@ for line in detail[1:]:
     label.write(line[0])
     label.write('\t')
     label.write(color_comparison[serotype])
+    label.write('\t')
+    label.write(serotype)
     label.write('\n')
 label.close()
 
