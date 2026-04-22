@@ -22,7 +22,8 @@ snippy-core --ref ../${REF} *
 snippy-clean_full_aln core.full.aln > clean.full.aln
 
 echo "=== Step 3. Running Gubbins ==="
-run_gubbins.py -p gubbins clean.full.aln
+# maybe you should change the threads
+run_gubbins.py -p gubbins clean.full.aln --threads 16
 snp-sites -c gubbins.filtered_polymorphic_sites.fasta > clean.core.aln
 
 echo "=== Step 4. Building ML tree with FastTree ==="
