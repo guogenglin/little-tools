@@ -14,7 +14,7 @@ mkdir -p ${OUTDIR}
 
 echo "=== Step 1. Running Snippy for each sample ==="
 # move to the filefolder with the genome sequences you want to analysis
-for id in *.fasta; do sample=${id%.fasta}; snippy --ref "$REF" --outdir "$OUTDIR/$sample" --ctgs "$id"; done
+for id in *.fasta; do sample=${id%.fasta}; snippy --ref "$REF" --outdir "$OUTDIR/$sample" --cpus 24 --ctgs "$id"; done
 
 echo "=== Step 2. Running Snippy-core ==="
 cd ${OUTDIR}
@@ -23,7 +23,7 @@ snippy-clean_full_aln core.full.aln > clean.full.aln
 
 echo "=== Step 3. Running Gubbins ==="
 # maybe you should change the threads
-run_gubbins.py -p gubbins clean.full.aln --threads 16
+run_gubbins.py -p gubbins clean.full.aln --threads 24
 snp-sites -c gubbins.filtered_polymorphic_sites.fasta > clean.core.aln
 
 echo "=== Step 4. Building ML tree with FastTree ==="
